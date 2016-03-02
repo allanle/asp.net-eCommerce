@@ -11,6 +11,11 @@ namespace eCommerce.Model
         public int BasketId { get; set; }
         public DateTime Date { get; set; }
 
+        public Basket()
+        {
+            this.BasketItem = new List<BasketItem>();
+        }
+
         public virtual ICollection<BasketItem> BasketItem { get; set; }
     }
 }
