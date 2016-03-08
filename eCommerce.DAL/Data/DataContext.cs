@@ -11,7 +11,7 @@ namespace eCommerce.DAL.Data
     public class DataContext : DbContext
     {
         // Pass the Name of a connection string or explicitly declare it
-        public DataContext() : base("DefaultConnectoin")
+        public DataContext() : base("DefaultConnection")
         {
 
         }
