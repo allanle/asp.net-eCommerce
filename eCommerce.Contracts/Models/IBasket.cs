@@ -5,7 +5,7 @@ namespace eCommerce.Contracts.Model
     public interface IBasket
     {
         Guid BasketId { get; set; }
-        
+
         ICollection<IBasketItem> IBasketItems { get; }
         ICollection<IBasketVoucher> IBasketVouchers { get; }
         DateTime date { get; set; }

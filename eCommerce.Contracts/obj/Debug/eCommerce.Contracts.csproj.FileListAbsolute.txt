@@ -1,5 +1,10 @@
-C:\Users\bretthargreaves\Documents\Visual Studio 2013\Projects\eCommerce\eCommerce.Contracts\bin\Debug\eCommerce.Contracts.dll
-C:\Users\bretthargreaves\Documents\Visual Studio 2013\Projects\eCommerce\eCommerce.Contracts\bin\Debug\eCommerce.Contracts.pdb
-C:\Users\bretthargreaves\Documents\Visual Studio 2013\Projects\eCommerce\eCommerce.Contracts\obj\Debug\eCommerce.Contracts.csprojResolveAssemblyReference.cache
-C:\Users\bretthargreaves\Documents\Visual Studio 2013\Projects\eCommerce\eCommerce.Contracts\obj\Debug\eCommerce.Contracts.dll
-C:\Users\bretthargreaves\Documents\Visual Studio 2013\Projects\eCommerce\eCommerce.Contracts\obj\Debug\eCommerce.Contracts.pdb
+E:\Workspace\eCommerce\eCommerce.Contracts\bin\Debug\eCommerce.Contracts.dll
+E:\Workspace\eCommerce\eCommerce.Contracts\bin\Debug\eCommerce.Contracts.pdb
+E:\Workspace\eCommerce\eCommerce.Contracts\obj\Debug\eCommerce.Contracts.csprojResolveAssemblyReference.cache
+E:\Workspace\eCommerce\eCommerce.Contracts\obj\Debug\eCommerce.Contracts.dll
+E:\Workspace\eCommerce\eCommerce.Contracts\obj\Debug\eCommerce.Contracts.pdb
+E:\Workspace\asp.net-eCommerce\eCommerce.Contracts\bin\Debug\eCommerce.Contracts.dll
+E:\Workspace\asp.net-eCommerce\eCommerce.Contracts\bin\Debug\eCommerce.Contracts.pdb
+E:\Workspace\asp.net-eCommerce\eCommerce.Contracts\obj\Debug\eCommerce.Contracts.csprojResolveAssemblyReference.cache
+E:\Workspace\asp.net-eCommerce\eCommerce.Contracts\obj\Debug\eCommerce.Contracts.dll
+E:\Workspace\asp.net-eCommerce\eCommerce.Contracts\obj\Debug\eCommerce.Contracts.pdb

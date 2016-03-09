@@ -14,7 +14,7 @@ namespace eCommerce.Model
 
         [MaxLength(10)]
         public string VoucherCode { get; set; }
-        
+
         public int VoucherTypeId { get; set; }
         [MaxLength(150)]
         public string VoucherDescription { get; set; }

@@ -1,15 +1,15 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{70293512-D642-4E28-9833-8BE49AE3F18D}</ProjectGuid>
+    <ProjectGuid>{A8B1C1FE-627A-4C3E-8DD4-1EEE885144FE}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>eCommerce.Services</RootNamespace>
     <AssemblyName>eCommerce.Services</AssemblyName>
-    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
@@ -31,12 +31,14 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
+    <Reference Include="System.configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System.Web" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
@@ -45,15 +47,15 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\eCommerce.Contracts\eCommerce.Contracts.csproj">
-      <Project>{7ff7bcf7-077c-44bc-82bd-5cf47eb934e0}</Project>
+      <Project>{0e873550-2ea1-45d5-ad7c-eedddd97e70b}</Project>
       <Name>eCommerce.Contracts</Name>
     </ProjectReference>
     <ProjectReference Include="..\eCommerce.DAL\eCommerce.DAL.csproj">
-      <Project>{cf828b57-bd94-4217-bafa-04e0dddcfff2}</Project>
+      <Project>{50d37411-23a6-476e-9cd9-46803a0bf81e}</Project>
       <Name>eCommerce.DAL</Name>
     </ProjectReference>
     <ProjectReference Include="..\eCommerce.Model\eCommerce.Model.csproj">
-      <Project>{3fd5ae06-0f44-4666-9f2c-5543d1a57533}</Project>
+      <Project>{41e109dc-c57f-46b3-ab1f-c68ee4411412}</Project>
       <Name>eCommerce.Model</Name>
     </ProjectReference>
   </ItemGroup>

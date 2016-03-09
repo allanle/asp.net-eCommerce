@@ -1,5 +1,5 @@
-﻿using eCommerce.DAL.Data;
-using eCommerce.Contracts.Repositories;
+﻿using eCommerce.Contracts.Repositories;
+using eCommerce.DAL.Data;
 using System;
 using System.Collections.Generic;
 using System.Data.Entity;
@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace eCommerce.DAL.Repositories
 {
-   public abstract class RepositoryBase<TEntity> : IRepositoryBase<TEntity> where TEntity : class
+    public abstract class RepositoryBase<TEntity> : IRepositoryBase<TEntity> where TEntity : class
     {
         internal DataContext context;
         internal DbSet<TEntity> dbSet;
@@ -30,19 +30,22 @@ namespace eCommerce.DAL.Repositories
             return dbSet;
         }
 
+        // need to override in order to implement specific filtering and ordering
         public IQueryable<TEntity> GetPaged(int top = 20, int skip = 0, object orderBy = null, object filter = null)
         {
-            return null; //need to override in order to implement specific filtering and ordering
+            return null;
         }
 
+        // need to override tin order to implement specific filtering
         public virtual IQueryable<TEntity> GetAll(object filter)
         {
-            return null; //need to override in order to implement specific filtering.
+            return null;
         }
 
+        // need to override in order to implement specific object graph
         public virtual TEntity GetFullObject(object id)
         {
-            return null; //need to override in order to implement specific object graph.
+            return null;
         }
 
         public virtual void Insert(TEntity entity)
@@ -58,9 +61,10 @@ namespace eCommerce.DAL.Repositories
 
         public virtual void Delete(TEntity entity)
         {
-            if (context.Entry(entity).State == EntityState.Detached)
+            if(context.Entry(entity).State == EntityState.Detached)
+            {
                 dbSet.Attach(entity);
-
+            }
             dbSet.Remove(entity);
         }
 
