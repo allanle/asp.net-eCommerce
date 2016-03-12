@@ -14,11 +14,14 @@ namespace eCommerce.WebUI.Controllers
     {
         IRepositoryBase<Customer> customers;
         IRepositoryBase<Product> products;
+        IRepositoryBase<Basket> baskets;
+        BasketService basketService;
 
-        public HomeController(IRepositoryBase<Customer> customers, IRepositoryBase<Product> products)
+        public HomeController(IRepositoryBase<Customer> customers, IRepositoryBase<Product> products, IRepositoryBase<Basket> baskets)
         {
             this.customers = customers;
             this.products = products;
+            this.baskets = baskets
         }
 
         public ActionResult Index()
