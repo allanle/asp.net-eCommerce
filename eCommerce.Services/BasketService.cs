@@ -1,9 +1,12 @@
-﻿using System;
+﻿using eCommerce.Contracts.Repositories;
+using eCommerce.DAL.Data;
+using eCommerce.DAL.Repositories;
+using eCommerce.Model;
+using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Web;
+ 
 
 namespace eCommerce.Services
 {
@@ -32,7 +35,7 @@ namespace eCommerce.Services
             HttpCookie cookie = new HttpCookie(BasketSessionName);
             //now create a new basket and set the creation date.
             Basket basket = new Basket();
-            basket.date = DateTime.Now;
+            basket.Date = DateTime.Now;
             basket.BasketId = Guid.NewGuid();
 
             //add and persist in the dabase.
@@ -52,7 +55,7 @@ namespace eCommerce.Services
             bool success = true;
 
             Basket basket = GetBasket(httpContext);
-            BasketItem item = basket.BasketItems.FirstOrDefault(i => i.ProductId == productId);
+            BasketItem item = basket.BasketItem.FirstOrDefault(i => i.ProductId == productId);
 
             if (item == null)
             {

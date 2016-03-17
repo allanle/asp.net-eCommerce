@@ -11,7 +11,7 @@ namespace eCommerce.Model
     {
         private List<BasketItem> _basketItems;
         private List<BasketVoucher> _basketVouchers;
-        public int BasketId { get; set; }
+        public Guid BasketId { get; set; }
         public DateTime Date { get; set; }
 
         public Basket()
