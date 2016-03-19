@@ -10,12 +10,11 @@ namespace eCommerce.DAL.Repositories
 {
     public class ProductRepository : RepositoryBase<Product>
     {
-        public ProductRepository(DataContext context) : base(context)
+        public ProductRepository(DataContext context)
+            : base(context)
         {
-            if(context == null)
-            {
+            if (context == null)
                 throw new ArgumentNullException();
-            }
         }
     }
 }

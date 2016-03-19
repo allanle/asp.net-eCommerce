@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace eCommerce.DAL.Repositories
 {
-    public class VoucherRepository : RepositoryBase<Voucher>
+    public class VoucherRepository: RepositoryBase<Voucher>
     {
         public VoucherRepository(DataContext context)
             : base(context)

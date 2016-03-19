@@ -10,13 +10,17 @@ namespace eCommerce.DAL.Data
 {
     public class DataContext : DbContext
     {
-        // Pass the Name of a connection string or explicitly declare it
-        public DataContext() : base("DefaultConnection")
+        /// <summary>
+        /// you can either pass the NAME of a conenction string (e.g. from a web.config), and explicitly delcare it.
+        /// </summary>
+        public DataContext()
+            : base("DefaultConnection")
         {
-
         }
 
-        // Entity to be persisted must be declared here.
+        /// <summary>
+        /// any entity to be persisted must me delcared here.
+        /// </summary>
         public DbSet<Product> Products { get; set; }
         public DbSet<Order> Orders { get; set; }
         public DbSet<OrderItem> OrderItems { get; set; }
@@ -26,5 +30,6 @@ namespace eCommerce.DAL.Data
         public DbSet<Voucher> Vouchers { get; set; }
         public DbSet<BasketVoucher> BasketVouchers { get; set; }
         public DbSet<VoucherType> VoucherTypes { get; set; }
+
     }
 }

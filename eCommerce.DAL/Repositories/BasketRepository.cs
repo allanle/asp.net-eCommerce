@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace eCommerce.DAL.Repositories
 {
-    public class BasketRepository : RepositoryBase<Basket>
+    public class BasketRepository: RepositoryBase<Basket>
     {
         public BasketRepository(DataContext context)
             : base(context)

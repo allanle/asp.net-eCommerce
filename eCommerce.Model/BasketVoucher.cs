@@ -13,7 +13,7 @@ namespace eCommerce.Model
         public int BasketVoucherId { get; set; }
         public int VoucherId { get; set; }
         public Guid BasketId { get; set; }
-        
+
         [MaxLength(10)]
         public string VoucherCode { get; set; }
         [MaxLength(100)]

@@ -1,12 +1,11 @@
 ﻿using eCommerce.Contracts.Repositories;
-using eCommerce.DAL.Data;
-using eCommerce.DAL.Repositories;
 using eCommerce.Model;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 using System.Web;
- 
 
 namespace eCommerce.Services
 {
@@ -35,7 +34,7 @@ namespace eCommerce.Services
             HttpCookie cookie = new HttpCookie(BasketSessionName);
             //now create a new basket and set the creation date.
             Basket basket = new Basket();
-            basket.Date = DateTime.Now;
+            basket.date = DateTime.Now;
             basket.BasketId = Guid.NewGuid();
 
             //add and persist in the dabase.
@@ -55,7 +54,7 @@ namespace eCommerce.Services
             bool success = true;
 
             Basket basket = GetBasket(httpContext);
-            BasketItem item = basket.BasketItem.FirstOrDefault(i => i.ProductId == productId);
+            BasketItem item = basket.BasketItems.FirstOrDefault(i => i.ProductId == productId);
 
             if (item == null)
             {
@@ -85,12 +84,12 @@ namespace eCommerce.Services
 
             if (cookie != null)
             {
-
-                if (Guid.TryParse(cookie.Value, out basketId))
+                
+                if(Guid.TryParse(cookie.Value, out basketId))
                 {
                     basket = baskets.GetById(basketId);
                 }
-                else {
+                else{
                     basket = createNewBasket(httpContext);
                 }
             }
@@ -131,9 +130,9 @@ namespace eCommerce.Services
         public void MoneyOff(Voucher voucher, Basket basket, BasketVoucher basketVoucher)
         {
             decimal basketTotal = basket.BasketTotal();
-            if (voucher.MinSpend < basketTotal)
+            if (voucher.MinSpend < basketTotal )
             {
-                basketVoucher.Value = voucher.Value * -1;
+                basketVoucher.Value = voucher.Value *-1;
                 basketVoucher.VoucherCode = voucher.VoucherCode;
                 basketVoucher.VoucherDescription = voucher.VoucherDescription;
                 basketVoucher.VoucherId = voucher.VoucherId;
@@ -154,7 +153,7 @@ namespace eCommerce.Services
                 basket.AddBasketVoucher(basketVoucher);
             }
 
-
+           
         }
     }
 }
