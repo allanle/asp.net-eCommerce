@@ -12,3 +12,10 @@ C:\Users\bretthargreaves\Desktop\eCommerce\eCommerce.Model\bin\Debug\eCommerce.C
 C:\Users\bretthargreaves\Desktop\eCommerce\eCommerce.Model\obj\Debug\eCommerce.Model.csprojResolveAssemblyReference.cache
 C:\Users\bretthargreaves\Desktop\eCommerce\eCommerce.Model\obj\Debug\eCommerce.Model.dll
 C:\Users\bretthargreaves\Desktop\eCommerce\eCommerce.Model\obj\Debug\eCommerce.Model.pdb
+E:\Workspace\asp.net-eCommerce\eCommerce.Model\bin\Debug\eCommerce.Model.dll
+E:\Workspace\asp.net-eCommerce\eCommerce.Model\bin\Debug\eCommerce.Model.pdb
+E:\Workspace\asp.net-eCommerce\eCommerce.Model\bin\Debug\eCommerce.Contracts.dll
+E:\Workspace\asp.net-eCommerce\eCommerce.Model\bin\Debug\eCommerce.Contracts.pdb
+E:\Workspace\asp.net-eCommerce\eCommerce.Model\obj\Debug\eCommerce.Model.csprojResolveAssemblyReference.cache
+E:\Workspace\asp.net-eCommerce\eCommerce.Model\obj\Debug\eCommerce.Model.dll
+E:\Workspace\asp.net-eCommerce\eCommerce.Model\obj\Debug\eCommerce.Model.pdb

@@ -8,3 +8,8 @@ C:\Users\bretthargreaves\Desktop\eCommerce\eCommerce.Contracts\bin\Debug\eCommer
 C:\Users\bretthargreaves\Desktop\eCommerce\eCommerce.Contracts\obj\Debug\eCommerce.Contracts.csprojResolveAssemblyReference.cache
 C:\Users\bretthargreaves\Desktop\eCommerce\eCommerce.Contracts\obj\Debug\eCommerce.Contracts.dll
 C:\Users\bretthargreaves\Desktop\eCommerce\eCommerce.Contracts\obj\Debug\eCommerce.Contracts.pdb
+E:\Workspace\asp.net-eCommerce\eCommerce.Contracts\bin\Debug\eCommerce.Contracts.dll
+E:\Workspace\asp.net-eCommerce\eCommerce.Contracts\bin\Debug\eCommerce.Contracts.pdb
+E:\Workspace\asp.net-eCommerce\eCommerce.Contracts\obj\Debug\eCommerce.Contracts.csprojResolveAssemblyReference.cache
+E:\Workspace\asp.net-eCommerce\eCommerce.Contracts\obj\Debug\eCommerce.Contracts.dll
+E:\Workspace\asp.net-eCommerce\eCommerce.Contracts\obj\Debug\eCommerce.Contracts.pdb
